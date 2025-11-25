@@ -1,0 +1,341 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF; /* Changed to yellow */
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+.logo {
+    width: 25vw; /* Scales with viewport width */
+    max-width: 300px; /* Prevents it from getting too large */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.text {
+    font-size: 1.5vw; /* Scales with viewport width */
+    margin-left: 20px;
+    text-align: left;
+    color: #FFEB3B;
+}
+
+
+
+/* Product Section Styles */
+.product-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+
+/* Product Details Styles */
+.product-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-feature {
+    width: 30%;
+    padding: 10px;
+    background-color: #e7f4e4;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.product-feature h3 {
+    color: #4CAF50;
+}
+
+/* Instructions Section Styles */
+.instructions-section {
+    padding: 20px;
+    background-color: #CCC;
+}
+
+.instructions-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #4CAF50;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.testimonial-text {
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Where to Buy Section Styles */
+.where-to-buy-section {
+    padding: 20px;
+    background-color: #f7f9f7;
+}
+
+/* Retailers List Styles */
+.retailers-list {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+    margin: 20px 0; /* Add margin to space out from other elements */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+.retailers-list li {
+    padding: 10px 15px; /* Add padding for each list item */
+    border-bottom: 1px solid #ddd; /* Separator line between items */
+}
+
+/* Remove bottom border for the last item */
+.retailers-list li:last-child {
+    border-bottom: none;
+}
+
+.retailers-list li:hover {
+    background-color: rgba(255, 255, 0, 0.2); /* Highlight on hover */
+}
+
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-feature {
+        width: 80%;
+    }
+}
+
+
+/* Gallery Styles */
+.gallery {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap images to the next line if necessary */
+    gap: 10px; /* Space between images */
+    justify-content: center; /* Center the images */
+}
+
+.gallery-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Max width for images */
+    max-height: 200px; /* Limit the height */
+    object-fit: cover; /* Cover the element without stretching */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor for clickable images */
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.gallery-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  width: 100%;
+  padding: 20px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 45%;
+}
+
+.large-button {
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  padding: 15px 30px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.large-button-back {
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px 15px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.large-button:hover {
+  background-color: #0056b3;
+}
+
+
+.custom-section {
+  display: flex;
+}
+
+.left-div,
+.right-div {
+  flex: 1; /* Each div takes 50% of the screen width */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.right-div img {
+  width: 100%; /* Image stretches to fill the width */
+  max-height:500px;
+  max-width:500px;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while covering the space */
+}
+
+.centered-text {
+  text-align: center;
+  font-weight: bold;
+}
+
+.colors div {
+  width: 100px;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.black {
+  color: #FFFFFF;
+  background-color: #000000; 
+}
+
+.green {
+  color: #FFFFFF;
+  background-color: #00AE42; 
+}
+
+.red {
+  color: #FFFFFF;
+  background-color: #EB3A3A; 
+}
+
+.yellow {
+  color: #FFFFFF;
+  background-color: #FFD00B; 
+}
+
+.orange {
+  color: #FFFFFF;
+  background-color: #F75403; 
+}
+
+.lime-green {
+  color: #FFFFFF;
+  background-color: #6EE53C; 
+}
+
+.gray {
+  color: #FFFFFF;
+  background-color: #ADB1B2; 
+}
+
+.blue {
+  color: #FFFFFF;
+  background-color: #002E96; 
+}
+
+.turquoise {
+  color: #FFFFFF;
+  background-color: #2DCCD3; 
+}
+
+.lakeblue {
+  color: #FFFFFF;
+  background-color: #1F79E5; 
+}
+
+.peanutbrown {
+  color: #FFFFFF;
+  background-color: #875718; 
+}
+
+.cream {
+  color: #000000;
+  background-color: #F9DFB9; 
+}
+
+.white {
+  color: #000000;
+  background-color: #FFFFFF; 
+}
+
+.darkgray {
+  color: #FFFFFF;
+  background-color: #515151; 
+}
+.forestgreen {
+  color: #FFFFFF;
+  background-color: #39541A; 
+}
